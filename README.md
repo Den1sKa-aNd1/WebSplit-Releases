@@ -4,9 +4,7 @@
 
 WebSplit is a cross‑platform desktop app that lets you run many live web pages side‑by‑side on a single zoomable, pannable canvas — alongside built‑in productivity widgets (notes, todos, kanban, whiteboard, timers, Git, an API tester, and more). Instead of drowning in browser tabs and separate apps, you arrange everything you need for a task in one **workspace**, switch between workspaces instantly, and pick up exactly where you left off.
 
-It's **local‑first**: your workspaces, bookmarks, and widget content live on your machine, not in the cloud.
-
-> This repository hosts packaged **releases** of WebSplit (macOS `.dmg` / `.zip`). Updates are delivered automatically in‑app.
+It's **local‑first**: your workspaces, bookmarks, and widget content live on your machine, not in the cloud. Updates are delivered automatically in‑app, so you always stay on the latest version.
 
 ---
 
@@ -90,7 +88,7 @@ It's **local‑first**: your workspaces, bookmarks, and widget content live on y
 
 ## Installation (macOS)
 
-1. Download the latest `WebSplit-<arch>.dmg` from the [Releases](../../releases) page — `arm64` for Apple Silicon, `x64` for Intel.
+1. Download the latest WebSplit build for your Mac — `arm64` for Apple Silicon, `x64` for Intel.
 2. Open the `.dmg` and drag **WebSplit** into **Applications**.
 3. Launch it. Builds are signed and notarized, so no Gatekeeper override is needed.
 
@@ -143,7 +141,3 @@ Every tool call passes through a policy **you configure** in the MCP Control pan
 - **Destructive tools** — Disabled by default, with an option to require an explicit `confirm` flag when enabled.
 - **Mutations are idempotent** (via idempotency keys) and versioned, and live UI updates stay in sync with disk.
 - **Full audit log** — Every tool call is recorded locally (tool, status, timestamp, errors) and viewable in the panel.
-
----
-
-## Licensing
